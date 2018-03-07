@@ -1,4 +1,43 @@
-<p>Drag the link below into your bookmarks bar.</p>
-<a href="javascript: function getRandomColor() { var letters = "0123456789ABCDEF"; var color = "#"; for (var i = 0; i < 6; i++) { color += letters[Math.floor(Math.random() * 16)]; } return color; } setInterval(function() { void (document.body.style.backgroundColor = getRandomColor()); var p = document.getElementsByTagName("P"); var i = 0; for (i = 0; i < p.length; i++) { p[i].style.backgroundColor = getRandomColor(); } var div = document.getElementsByTagName("DIV"); var i = 0; for (i = 0; i < div.length; i++) { div[i].style.backgroundColor = getRandomColor(); } }, 1);">ColorHigh</a>
+<p>Drag the link below into your bookmarks bar.</p><a href="javascript: document.body.style.backgroundImage = "url('')";
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+setInterval(function() {
+  void (document.body.style.backgroundColor = getRandomColor());
+  var p = document.getElementsByTagName("*");
+  var i = 0;
+  for (i = 0; i < p.length; i++) {
+    p[i].style.backgroundColor = getRandomColor();
+    p[i].style.color=getRandomColor();
+  }
+}, 1);
+">ColorHigh</a>
 <br>
 <a href="javascript:setInterval(function(){window.open("" , "" , "_blank")},1)">WindowsXD</a>
+<br>
+<a href="javascript: var urls = [
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWqS7VtnZqAbScjsYigU9ciice_idoi8z582iOQGhpo5sxW9DB",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIg0WLbIuGvlbX_WvLLd7VkSfCq17nLeItRwyeQmhOTgA5BXf",
+  "https://dsocdn.akamaized.net/Assets/Images_Upload/2015/11/17/face-with-tears-of-joy.png",
+  "https://www.ouest-france.fr/sites/default/files/styles/image-640x360-p/public/2016/05/31/barcelone-elle-annonce-sa-mortpar-un-emoji_0.png?itok=6XKJr0FJ",
+  "https://emojidefine.com/wp-content/uploads/2017/05/🙁-Slightly-Frowning-Face-Emoji.png"
+];
+function chooseImage() {
+  return urls[Math.floor(Math.random() * 5)];
+}
+setInterval(function() {
+  document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.backgroundImage = "url(" + chooseImage() + ")";
+  var p = document.getElementsByTagName('*');
+  for (i = 0; i < p.length; i++) {
+    p[i].style.backgroundImage = "url(" + chooseImage() + ")";
+  }
+}, 100);
+">Emojis?</a>
+
+<p>More links coming soon, so stay posted!</p>
