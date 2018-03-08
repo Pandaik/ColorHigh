@@ -1,4 +1,4 @@
-<p>Drag the link below into your bookmarks bar.</p><a href="javascript: document.body.style.backgroundImage = "url('')";
+<p>Drag the link below into your bookmarks bar.</p><a href='javascript: document.body.style.backgroundImage = "url("")";
 function getRandomColor() {
   var letters = "0123456789ABCDEF";
   var color = "#";
@@ -16,11 +16,11 @@ setInterval(function() {
     p[i].style.color=getRandomColor();
   }
 }, 1);
-">ColorHigh</a>
+'>ColorHigh</a>
 <br>
 <a href="javascript:setInterval(function(){window.open("" , "" , "_blank")},1)">WindowsXD</a>
 <br>
-<a href="javascript: var urls = [
+<a href='javascript: var urls = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWqS7VtnZqAbScjsYigU9ciice_idoi8z582iOQGhpo5sxW9DB",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGIg0WLbIuGvlbX_WvLLd7VkSfCq17nLeItRwyeQmhOTgA5BXf",
   "https://dsocdn.akamaized.net/Assets/Images_Upload/2015/11/17/face-with-tears-of-joy.png",
@@ -33,7 +33,7 @@ function chooseImage() {
 setInterval(function() {
   document.body.style.backgroundColor = "#f3f3f3";
   document.body.style.backgroundImage = "url(" + chooseImage() + ")";
-  var p = document.getElementsByTagName('*');
+  var p = document.getElementsByTagName("*");
   for (i = 0; i < p.length; i++) {
     p[i].style.backgroundImage = "url(" + chooseImage() + ")";
   }
